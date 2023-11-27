@@ -68,7 +68,6 @@ main img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
-  width: 100%;
   max-width: 30rem;
   margin: 20px;
   border: 2px solid #000; /* Add black border */
