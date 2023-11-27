@@ -1,3 +1,10 @@
+:root {
+  --padding: 1rem;
+  --primary: ##046633;
+  --light: ##b0cbab;
+  --yellow: #e9eea2;
+}
+
 *,
 *:before,
 *:after {
@@ -8,7 +15,7 @@
 
 body {
   margin: 0;
-  background: linear-gradient(to right, #596280, #e1dfe5, #596280);
+  background: whitesmoke;
   box-sizing: border-box;
   min-height: 100vh;
   display: grid;
@@ -18,10 +25,70 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-main {
+
+header {
+  grid-row: 1;
   grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
 }
 
+header img {
+  max-width: 100px;
+}
+
+main {
+  grid-row: 2;
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.involvere {
+  width: auto;
+  overflow: auto;
+}
 .card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  margin: 10px; /* Add margin to separate the cards */
+  border: 2px solid #000; /* Add black border */
+}
+
+.card-content {
+  padding: 20px;
+  border: 20px;
   margin: 0 auto;
+  color: #333;
+}
+
+.card-content p {
+  color: #666;
+}
+
+footer {
+  grid-row: 3;
+  grid-column: 1 / -1;
+  background-color: #fff;
+}
+
+footer img {
+  max-height: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: -2px #333;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2em;
 }
