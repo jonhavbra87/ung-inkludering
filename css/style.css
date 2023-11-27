@@ -34,9 +34,9 @@ header {
 }
 
 header img {
-  max-width: 100px;
-
+  width: 100px;
   height: auto;
+  margin: 0 auto;
 }
 
 main {
@@ -57,10 +57,14 @@ main {
   max-width: 70rem;
   margin: 0 auto;
 }
-.text-container img {
-  max-width: 100%;
-  max-height: auto;
+
+img {
+  /* position: relative; */
+  width: 100%;
+  height: auto;
   margin: 0 auto;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .card {
@@ -103,24 +107,4 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 2em;
-}
-
-/* Media query for small screens */
-@media screen and (max-width: 40rem) {
-  header {
-    width: 100%;
-  }
-  header img {
-    width: 100%;
-  }
-  h1 {
-    font-size: 1em;
-  }
-  .involvere {
-    /* max-width: 100%; */
-  }
-  footer img {
-    width: 100%;
-  }
 }
