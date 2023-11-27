@@ -1,7 +1,7 @@
 :root {
   --padding: 1rem;
-  --primary: ##046633;
-  --light: ##b0cbab;
+  --primary: #046633;
+  --light: #b0cbab;
   --yellow: #e9eea2;
   --purple: #8a777a;
   --beige: #c3c1ba;
@@ -25,25 +25,17 @@ body {
   grid-template-rows: auto 1fr auto;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
   gap: 2rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Alegreya", serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
   grid-row: 1;
   grid-column: 1 / -1;
-  width: 100%;
-  gap: 0;
-  display: flex;
-  justify-content: end;
-  background-color: #fff;
-}
-
-header img {
-  max-height: 110px;
-  width: 100%;
-  max-width: 50rem;
-  margin: 0 auto;
+  /* width: 100%; */
+  /* display: flex;
+  justify-content: end; */
 }
 
 main {
@@ -55,6 +47,12 @@ main {
   text-align: center;
 }
 
+main img {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
 .text-container {
   display: flex;
   flex-direction: column;
@@ -64,21 +62,15 @@ main {
   margin: 0 auto;
 }
 
-main img {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
 .card {
   display: block;
-  background-color: #fff;
+  background-color: var(--light);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   width: 100%;
   max-width: 30rem;
-  margin: 20px auto;
+  margin: 20px;
   border: 2px solid #000; /* Add black border */
 }
 
@@ -86,33 +78,44 @@ main img {
   padding: 20px;
   border: 20px;
   margin: 0 auto;
-  color: #333;
 }
 
 .card-content p {
-  color: #666;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #000;
+  font-family: Roboto;
 }
 
 footer {
   grid-row: 3;
   grid-column: 1 / -1;
+  width: 100%;
   background-color: #fff;
 }
 
 footer img {
   max-height: 100px;
-  width: auto;
+  max-width: 30rem;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: end;
 }
 
-h1 {
+.h1 {
+  font-size: 1.8em;
+  font-stretch: 190%;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 700;
+  text-shadow: -5px 10px 15px var(--light);
 }
 
-h2 {
+.h2 {
   text-align: center;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: oswald;
 }
