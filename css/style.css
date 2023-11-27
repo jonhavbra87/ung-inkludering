@@ -9,13 +9,12 @@
 *:before,
 *:after {
   box-sizing: inherit;
-  /* color: var(--primary); */
   text-decoration: none;
 }
 
 body {
   margin: 0;
-  background: whitesmoke;
+  background: #efede3;
   box-sizing: border-box;
   min-height: 100vh;
   display: grid;
@@ -36,6 +35,8 @@ header {
 
 header img {
   max-width: 100px;
+
+  height: auto;
 }
 
 main {
@@ -44,11 +45,24 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+  text-align: center;
 }
-.involvere {
-  width: auto;
-  overflow: auto;
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  max-width: 70rem;
+  margin: 0 auto;
 }
+.text-container img {
+  max-width: 100%;
+  max-height: auto;
+  margin: 0 auto;
+}
+
 .card {
   display: flex;
   flex-direction: row;
@@ -87,8 +101,26 @@ footer img {
 
 h1 {
   text-align: center;
-  text-shadow: -2px #333;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 2em;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 40rem) {
+  header {
+    width: 100%;
+  }
+  header img {
+    width: 100%;
+  }
+  h1 {
+    font-size: 1em;
+  }
+  .involvere {
+    /* max-width: 100%; */
+  }
+  footer img {
+    width: 100%;
+  }
 }
